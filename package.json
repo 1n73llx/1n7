@@ -1,0 +1,13 @@
+{
+"name": "1n7",
+"description": "docs of 1n7",
+"author": "Tizee",
+  "devDependencies": {
+    "vuepress": "^1.0.0-alpha.44"
+  },
+  "scripts":{
+  	"dev": "vuepress dev docs --temp .temp",
+	"build": "vuepress build docs",
+	"help":"vuepress --help"
+  }
+}

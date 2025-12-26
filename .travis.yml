@@ -1,0 +1,21 @@
+language: node_js
+
+node_js:
+  - lts/*
+
+env:
+  global:
+    - GITHUB_REPO: "1n73llx/1n7"
+
+script:
+  - npm install
+  - npm run build
+
+after_success:
+  - bash ./scripts/deploy.sh
+
+cached:
+  npm: true
+  directories: 
+   - node_modules
+
